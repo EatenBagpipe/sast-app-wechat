@@ -1,0 +1,85 @@
+.weekly-container {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20rpx;
+}
+
+.card, .card-with-small-img, .card-with-large-img {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10rpx;
+  margin-top: 20rpx;
+  margin-bottom: 0rpx;
+  box-shadow: 4rpx 4rpx 10rpx #ccc;
+}
+
+.card {
+  height: 290rpx;
+}
+
+.card-with-large-img {
+  height: 620rpx;
+}
+
+.card-with-small-img {
+  height: 290rpx;
+}
+
+.title {
+  font-size: larger;
+  font-weight: bold;
+  margin: 20rpx;
+}
+
+.abstract, .abstract-with-large-img, .abstract-with-small-img {
+  font-size: medium;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  flex-grow: 1;
+  margin: 20rpx;
+  margin-top: 0rpx;
+  margin-bottom: 0rpx;
+  color: rgba(0, 0, 0, 0.678);
+}
+
+.abstract-with-large-img {
+  -webkit-line-clamp: 2;
+}
+
+.abstract-with-small-img {
+  width: 850rpx;
+}
+
+.comment {
+  font-size: small;
+  margin: 20rpx;
+  color: DarkGray;
+}
+
+.large-img {
+  margin: 20rpx;
+  margin-top: 0rpx;
+  margin-left: auto;
+  margin-right: auto;
+  width: 670rpx;
+  height: 370rpx;
+  border-radius: 10rpx;
+}
+
+.small-img {
+  margin: 20rpx;
+  margin-top: -15rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+}
+
+.txt-img-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

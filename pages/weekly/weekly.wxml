@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="weekly-container">
+  <view class="card">
+    <view class="title">
+      <text>卡片式样1</text>
+    </view>
+    <view class="abstract">
+      <text>我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体</text>
+    </view>
+    <view class="comment">
+      <text>114 赞 · 514 评论</text>
+    </view>
+  </view>
+  <view class="card-with-large-img">
+    <view class="title">
+      <text>卡片式样2</text>
+    </view>
+    <image class="large-img" src='sample_picture.png' mode='aspectFill'></image>
+    <view class="abstract-with-large-img">
+      <text>我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体</text>
+    </view>
+    <view class="comment">
+      <text>19 赞 · 19 评论</text>
+    </view>
+  </view>
+  <view class="card-with-small-img">
+    <view class="title">
+      <text>卡片式样3</text>
+    </view>
+    <view class="txt-img-wrap">
+      <view class="abstract-with-small-img">
+        <text>我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体我能吞下玻璃而不伤身体</text>
+      </view>
+      <image class="small-img" src='sample_picture.png' mode='aspectFill'></image>
+    </view>
+    <view class="comment">
+      <text>8 赞 · 10 评论</text>
+    </view>
+  </view>
+</view>
