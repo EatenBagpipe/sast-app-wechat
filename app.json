@@ -1,12 +1,15 @@
 {
   "pages": [
-    "pages/weekly/weekly"
+    "pages/weekly/weekly",
+    "pages/out/out",
+    "pages/article/article"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black",
-    "backgroundColor": "#eee"
+    "backgroundColor": "#eee",
+    "enablePullDownRefresh": true
   }
 }
