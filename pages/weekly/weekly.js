@@ -1,21 +1,58 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
 
 Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
   //事件处理函数
-  bindViewTap: function () {
+  onPullDownRefresh: function() {
+    wx.showNavigationBarLoading()
+    setTimeout(function() {
+      wx.hideNavigationBarLoading()
+      wx.stopPullDownRefresh()
+    }, 1500);
+  },
+
+  goBaidu: function(options) {
+    wx.navigateTo({
+      url: '../out/out', //跳外部链接需要添加out
+      success: function() {},
+      fail: function() {},
+      complete: function() {}
+    })
+  },
+
+  goArticle: function(options) {
+    wx.navigateTo({
+      url: '../article/article', //跳转至文章页面
+      success: function() {},
+      fail: function() {},
+      complete: function() {}
+    })
+  },
+
+  onReachBottom: function() {
+    console.log('加载更多')
+    setTimeout(() => {
+      this.setData({
+        isHideLoadMore: true,
+        recommends: [],
+      })
+    }, 1000)
+  },
+
+  bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+
+  onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -43,7 +80,7 @@ Page({
       })
     }
   },
-  getUserInfo: function (e) {
+  getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
