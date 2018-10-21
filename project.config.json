@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
 	"appid": "wxcc8ff890d18d8d66",
-	"projectname": "the%20latest",
+	"projectname": "sast-app-wechat",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
