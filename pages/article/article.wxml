@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="article">
+    <wemark md="{{md}}" link highlight type="wemark"></wemark>
+  </view>
+</view>
