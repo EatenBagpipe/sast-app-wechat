@@ -6,6 +6,6 @@ Page({
   },
   onLoad: function() {
     // console.log(this.data.md);
-    
+    wx.hideTabBar();
   },
 })
