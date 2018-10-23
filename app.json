@@ -2,14 +2,34 @@
   "pages": [
     "pages/weekly/weekly",
     "pages/out/out",
-    "pages/article/article"
+    "pages/article/article",
+    "pages/profile/profile",
+    "pages/profile/updateProfile/updateProfile"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#eee",
     "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#99CCFF",
+    "list": [
+      {
+        "pagePath": "pages/weekly/weekly",
+        "text": "动态",
+        "iconPath": "res/weekly.png",
+        "selectedIconPath": "res/weekly_fill.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "资料",
+        "iconPath": "res/profile.png",
+        "selectedIconPath": "res/profile_fill.png"
+      }
+    ]
   }
 }
