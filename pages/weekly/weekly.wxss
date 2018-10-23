@@ -90,7 +90,7 @@
 }
 
 .weui-loading {
-  margin: 0 5px;
+  margin: 5px;
   width: 20px;
   height: 20px;
   display: inline-block;
@@ -102,7 +102,7 @@
 }
 
 .weui-loadmore {
-  width: 65%;
+  width: 100%;
   margin: 1.5em auto;
   line-height: 1.6em;
   font-size: 14px;
@@ -112,6 +112,7 @@
 .weui-loadmore__tips {
   display: inline-block;
   vertical-align: middle;
+  color: rgba(0, 0, 0, 0.678);
 }
 
 .weui-btn {
